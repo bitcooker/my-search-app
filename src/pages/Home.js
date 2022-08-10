@@ -9,7 +9,7 @@ function Home() {
 
       </div>
       <div className='home__header-right'>
-        
+
       </div>
       </div>
       <div className='home__body'>
