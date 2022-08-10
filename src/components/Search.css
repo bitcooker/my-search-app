@@ -29,3 +29,29 @@
 .search__input-icon{
     color: gray;
 }
+
+.search__buttons{
+margin-top: 30px;
+display: flex;
+justify-content: center;
+}
+
+.btn{
+    background-color: rgb(240, 240, 240);
+    color: rgb(51, 51, 51);
+    border: none;
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn:hover{
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+background-color: #f8f8f8;
+background-image: -webkit-linear-gradient(top, #f1f1f1);
+color: #222;
+}

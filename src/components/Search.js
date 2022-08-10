@@ -11,6 +11,11 @@ function Search() {
         <input />
         <BiMicrophone />
       </div>
+
+      <div className="search__buttons">
+<button className="btn search1">Search</button>
+<button className="btn lucky">I'm feeling Lucky</button>
+      </div>
     </div>
   );
 }
