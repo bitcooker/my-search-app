@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import { GrAppsRounded } from "react-icons/gr";
 import { FaUserAstronaut } from "react-icons/fa";
+import Search from "../components/Search";
 
 function Home() {
   return (
@@ -24,6 +25,9 @@ function Home() {
           src="https://i.pinimg.com/originals/32/9b/3e/329b3e4c3a1330480b8106ca83d1e187.png"
           alt=""
         />
+        <div className="home__input-container">
+          <Search/>
+        </div>
       </div>
     </div>
   );
