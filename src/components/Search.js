@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import "./Search.css";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BiMicrophone } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
 const [input, setInput] = useState('');
+const navigate = useNavigate()
 
     const search = e => {
         e.preventDefault();
         //make sure preventing the refresh
         console.log('U HIT THE SEARCH BTN', input)
+
+        navigate('/search');
     }
 
   return (
