@@ -2,20 +2,27 @@ import React from "react";
 import { useStateValue } from "../StateProvider";
 import useGSearch from "../useGSearch";
 import "./SearchPage.css";
-import Response from "../response"
+import Response from "../response";
+import { Link } from "react-router-dom";
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   //LIVE API CALL
-  //const { data } = useGSearch(term); 
+  //const { data } = useGSearch(term);
 
   const data = Response;
 
-  console.log(data)
+  console.log(data);
   return (
     <div className="searchPage">
       <div className="searchPage__header">
-        <h1>{term}</h1>
+        <Link to="/">
+          <img
+            className="searchPage__logo"
+            src="https://i.pinimg.com/originals/32/9b/3e/329b3e4c3a1330480b8106ca83d1e187.png"
+            alt=""
+          />
+        </Link>
       </div>
       <div className="searchPage__results"></div>
     </div>
