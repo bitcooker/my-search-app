@@ -3,15 +3,25 @@ import "./Search.css";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BiMicrophone } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+import { useStateValue } from "../StateProvider";
+import { actionTypes } from "../reducer";
 
 function Search({ hideButtons = false }) {
+const [{ state }, dispatch] = useStateValue();
+
   const [input, setInput] = useState("");
   const navigate = useNavigate();
 
   const search = (e) => {
+     //make sure preventing the refresh
     e.preventDefault();
-    //make sure preventing the refresh
+   
     console.log("U HIT THE SEARCH BTN", input);
+
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input
+    })
 
     navigate("/search");
   };
