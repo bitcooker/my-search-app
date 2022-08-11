@@ -4,7 +4,13 @@ import useGSearch from "../useGSearch";
 import "./SearchPage.css";
 import Response from "../response";
 import { Link } from "react-router-dom";
-import Search from '../components/Search';
+import Search from "../components/Search";
+import { BiSearchAlt2 } from "react-icons/bi";
+import { BiNews } from "react-icons/bi";
+import { BiImages } from "react-icons/bi";
+import { BiShoppingBag } from "react-icons/bi";
+import { SiGooglemaps } from "react-icons/si";
+import { AiOutlineMore } from "react-icons/ai";
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
@@ -24,8 +30,36 @@ function SearchPage() {
             alt=""
           />
         </Link>
-        <div className='searchPage__header-body'>
+        <div className="searchPage__header-body">
           <Search hideButtons />
+          <div className="searchPage__options">
+            <div className="searchPage__options-left">
+              <div className="searchPage__option">
+                <BiSearchAlt2 />
+                <Link to="/all">All</Link>
+              </div>
+              <div className="searchPage__option">
+                <BiNews />
+                <Link to="/news">News</Link>
+              </div>
+              <div className="searchPage__option">
+                <BiImages />
+                <Link to="/images">Images</Link>
+              </div>
+              <div className="searchPage__option">
+                <BiShoppingBag />
+                <Link to="/shopping">shopping</Link>
+              </div>
+              <div className="searchPage__option">
+                <SiGooglemaps />
+                <Link to="/maps">maps</Link>
+              </div>
+              <div className="searchPage__option">
+                <AiOutlineMore />
+                <Link to="/more">more</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="searchPage__results"></div>
