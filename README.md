@@ -2,7 +2,7 @@
 
 Hey my friends! Here is my repo with search app. I used secret key so I can't share it, but I saved real responce from server so you can check functionality with hardcoded responce.
 
-![](./src/video/Video_2022-08-12_041706.wmv)
+![](https://youtu.be/Gho0jiGfj5U)
 
 ## What did I use for doing this app:
 
