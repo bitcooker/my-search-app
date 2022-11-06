@@ -1,6 +1,6 @@
 # Search clone app
 
-Hey my friends! Here is my repo with search app. I used secret key so I can't share it, but I saved real responce from server so you can check functionality with hardcoded responce.
+Hey my friends! Here is my repo with search app. It's fully responsive and made up with React, Redux, React Router DOM, context API, React Icons, click [here](https://tubular-salamander-c72897.netlify.app/) to see it.
 
 [![See how it looks](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/Gho0jiGfj5U)
 
