@@ -1,8 +1,4 @@
-# Search clone app
-
-Hey my friends! Here is my repo with search app. It's fully responsive and made up with React, Redux, React Router DOM, context API, React Icons, click [here](https://tubular-salamander-c72897.netlify.app/) to see it.
-
-[![See how it looks](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/Gho0jiGfj5U)
+# My Search Engine
 
 ## What did I use for doing this app:
 
