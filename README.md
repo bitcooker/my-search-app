@@ -1,5 +1,7 @@
 # My Search Engine
 
+![Search](https://user-images.githubusercontent.com/128102810/228693381-eefea3b3-2fde-4545-93dd-1ceb0f3f56e4.gif)
+
 ## What did I use for doing this app:
 
 1. Context API
